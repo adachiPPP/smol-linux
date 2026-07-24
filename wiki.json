@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2026-07-24",
+    "header": "how is smol linux built?",
+    "paragraph": [
+      "smol linux is built from scratch using busybox and musl libc, statically linked, no glibc dependency at all",
+      " ",
+      "the core pieces are:",
+      "@!     a custom init written in C, handles mounts + networking + handoff to a shell",
+      "@!     smol, a small custom package manager also written in C",
+      "@!     a curated, minimal set of static binaries instead of a full glibc userland",
+      " ",
+      "this keeps the final image small and dependency-free compared to a typical distro"
+    ]
+  }
+]
