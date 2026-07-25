@@ -181,7 +181,9 @@
     </div>
     <h1>smol linux</h1>
     <p>A tiny busybox and musl based linux built from scratch that tries to stay as small as possible.</p>
-    <p>"qemu-system-x86_64 -cdrom smol.iso -m 512 -nographic" to launch it! (FOR BARE METAL BIOS ONLY RN IM WORKING ON UEFI TOO)</p>
-    <a href="https://github.com/adachiPPP/smol-linux/releases/download/smol/smol.iso" class="btn">download iso!</a>
+    <p>"qemu-system-x86_64 -cdrom smol.iso -m 512 -nographic" to launch it! (for bios)</p>
+    <p>"qemu-system-x86_64 -bios /usr/share/edk2/x64/OVMF.4m.fd -cdrom smol-uefi.iso -m 512 -nographic" to launch it! (for uefi needs the edk2-ovmf package)</p>
+    <a href="https://github.com/adachiPPP/smol-linux/releases/download/smol/smol-bios.iso" class="btn">download iso! (bios)</a>
+    <a href="https://github.com/adachiPPP/smol-linux/releases/download/smol/smol-uefi.iso" class="btn">download iso! (uefi)</a>
 </body>
 </html>
